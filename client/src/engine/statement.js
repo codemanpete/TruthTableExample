@@ -202,7 +202,7 @@ function extractvariables(statement) {
   let variables = [];
 
   for (let symbol of symbols) {
-    if (symbol.match(/^[a-z]+$/i)) {
+    if (symbol.match(/^[a-z]+$/i) && !variables.includes(symbol)) { // prevent double counting symbols
       variables.push(symbol);
     }
   }

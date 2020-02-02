@@ -32,8 +32,8 @@ class Calculator extends React.Component {
       return <p key={i}>{item}</p>;
     });
     return (
-      <div>
-        <h3>Example</h3>
+      <div className="box">
+        <h3>Truth Table Builder</h3>
         <p>Type a wff in the box</p>
         <textarea value={this.state.wff} onChange={this.updateWff}></textarea>
         <br />

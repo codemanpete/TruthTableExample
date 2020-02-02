@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Calculator from './calculator.js';
+import Calculator2 from './calculator2.js';
 import './App.css';
 
 class App extends Component {
@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Calculator />
+        <Calculator2 />
       </div>
     );
   }
